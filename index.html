@@ -12,6 +12,9 @@
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <style>
+    * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
   html, body {
     overflow: hidden;
     height: 100%;
@@ -125,8 +128,6 @@
     overflow-x: hidden;
     touch-action: pan-y;
     overscroll-behavior: contain;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
   }
   
   .flashcard.flip-half { transform: rotateX(90deg); }
