@@ -1,6 +1,6 @@
 {
   "name": "Flashcard Tiếng Nhật N5",
-  "short_name": "N5",
+  "short_name": "Flashcard N5",
   "description": "Ứng dụng học từ vựng, ngữ pháp, số đếm, thời gian và động từ tiếng Nhật N5 bằng flashcard.",
   "start_url": "./index.html",
   "scope": "./",
