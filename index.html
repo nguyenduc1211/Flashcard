@@ -12,6 +12,9 @@
 <link rel="icon" href="icon-192.png">
 <link rel="apple-touch-icon" href="icon-192.png">
 <style>
+  * {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
   html, body {
     overflow: hidden;
     height: 100%;
@@ -793,12 +796,6 @@
     <select id="lesson-select"></select>
   </div>
 
-  <div class="menu-section">
-    <div class="menu-section-title">Tìm kiếm từ vựng</div>
-    <input type="text" id="search-input" placeholder="Nhập kana / kanji / nghĩa...">
-    <div id="search-results"></div>
-  </div>
-
   <div class="menu-section" id="counters-group" style="display: none;">
     <div class="menu-section-title">Chọn loại số đếm</div>
     <select id="counter-select">
@@ -880,6 +877,12 @@
     </select>
   </div>
 
+  <div class="menu-section">
+    <div class="menu-section-title">Tìm kiếm từ vựng</div>
+    <input type="text" id="search-input" placeholder="Nhập kana / kanji / nghĩa...">
+    <div id="search-results"></div>
+  </div>
+  
   <div class="menu-section">
     <div class="menu-section-title">Chế độ luyện tập</div>
     <div class="toggle-row">
