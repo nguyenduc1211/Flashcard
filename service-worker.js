@@ -14,9 +14,11 @@ const APP_SHELL = [
 ];
 
 // Những file LUÔN cần lấy bản mới nhất từ mạng khi có thể (network-first),
-// vì đây là nội dung có thể thay đổi thường xuyên: index.html (code app) và
-// version.json (dùng để tự kiểm tra phiên bản mới + hiển thị release notes).
-const NETWORK_FIRST_FILES = ["index.html", "version.json"];
+// vì đây là nội dung có thể thay đổi thường xuyên: index.html (code app),
+// version.json (tự kiểm tra phiên bản mới) và manifest.json (tên/icon app —
+// đưa vào network-first để mỗi lần sửa không bị "kẹt" bản cache cũ, không
+// cần đổi CACHE_NAME hay chờ Service Worker cập nhật mới thấy hiệu lực).
+const NETWORK_FIRST_FILES = ["index.html", "version.json", "manifest.json"];
 
 function isNetworkFirst(url) {
   return NETWORK_FIRST_FILES.some(name => url.pathname.endsWith(name)) ||
